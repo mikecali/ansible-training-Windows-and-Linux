@@ -1,44 +1,28 @@
-Vagrant Setup for Session-1
+# Vagrant Setup for Session-1
 
-Why Vagrant?
+## Why Vagrant?
 
-- Vagrant provides easy to configure, reproducible, and portable work
-environments. With this ability someone can build a test environment on
-their own laptop/pc and start working on a project.
+- Vagrant provides easy to configure, reproducible, and portable work environments. With this ability someone can build a test environment on their own laptop/pc and start working on a project.
 
-- Vagrant also provide full OS capability. Unlike containers (docker),
-Vagrant provisioned a VM on top of providers like Vmware, virtualbox and
-AWS.
+- Vagrant also provide full OS capability. Unlike containers (docker),Vagrant provisioned a VM on top of providers like Vmware, virtualbox and AWS.
 
-- Vagrant isolates dependencies and configuration within a single
-disposable, consistent environment, without sacrificing any of the tools
-you are used to working. It will also provide consistent workflow for
-developing and testing infrastructure management scripts.
+- Vagrant isolates dependencies and configuration within a single disposable, consistent environment, without sacrificing any of the tools you are used to working. It will also provide consistent workflow for developing and testing infrastructure management scripts.
 
-The Purpose:
+## The Purpose:
 
-The aim of this document is to provide guidance for the team members who
-wanted to learn Ansible using their own laptop/pc anytime they need
-without the need of other people to setup an environment for that
-purpose.
+- The aim of this document is to provide guidance for the team members who wanted to learn Ansible using their own laptop/pc anytime they need without the need of other people to setup an environment for that purpose.
 
-This document will try to provide a detailed step to setup vagrant
-environment with 3 VM’s running so that you can start your learning
-using ansible in the most controlled environment and without reliance to
-other people.
+- This document will try to provide a detailed step to setup vagrant environment with 3 VM’s running so that you can start your learning using ansible in the most controlled environment and without reliance to other people.
 
-Vagrant will provide an environment that can be stand up in no time and
-destroy anytime to build a fresh environment.
+- Vagrant will provide an environment that can be stand up in no time and destroy anytime to build a fresh environment.
 
-General Requirements:
+## General Requirements:
 
-Internet access is a must!
+- Internet access is a must!
+- VT support is enabled on your pc/laptop bios!
+- Install Notepad++ - <https://notepad-plus-plus.org/download/v7.3.3.html>
 
-VT support is enabled on your pc/laptop bios!
-
-Install Notepad++ - <https://notepad-plus-plus.org/download/v7.3.3.html>
-
-1\. Vagrant - <https://www.vagrantup.com/downloads.html>
+ Vagrant - <https://www.vagrantup.com/downloads.html>
 
 2\. Virtualbox - <https://www.virtualbox.org/wiki/Downloads>
 
