@@ -34,37 +34,28 @@ build failed.
 
 ## In short:
 
-1\. Your Host OS is 64-bits
+- Your Host OS is 64-bits
+- Intel Virtualization Technology and VT-d are both enabled in the BIOS
+- The Hyper-V platform is disabled in your Windows Feature list.
 
-2\. Intel Virtualization Technology and VT-d are both enabled in the BIOS
+**Follow the steps on this link to solve this issue:**
+http://www.fixedbyvonnie.com/2014/11/virtualbox-showing-32-bit-guest-versions-64-bit-host-os/#.WOLH2leb1hE
 
-3\. The Hyper-V platform is disabled in your Windows Feature list.
-
-Follow the steps on this link to solve this issue:
-[*http://www.fixedbyvonnie.com/2014/11/virtualbox-showing-32-bit-guest-versions-64-bit-host-os/\#.WOLH2leb1hE*](http://www.fixedbyvonnie.com/2014/11/virtualbox-showing-32-bit-guest-versions-64-bit-host-os/#.WOLH2leb1hE)
-
-Vagrant Environment Setup
+## Vagrant Environment Setup
 
 For Linux:
-
-1\. Install vagrant:
-
+1. Install vagrant:
  * yum install vagrant*
-
--   After installation, you need to make sure that the following vagrant
-    plugins are installed as well.
-
- \[root@fedora-pc \~\]\# vagrant plugin list
-
+-   After installation, you need to make sure that the following vagrant plugins are installed as well.
+``
+[root@fedora-pc ~]# vagrant plugin list
  vagrant-proxyconf (1.5.2)
-
-* *
-
-To install the plugins, simple issue this command: *vagrant plugin
-install vagrant-proxyconf*
-
-**vagrant-proxyconf** is needed to enable proxy during vm build under
-vagrant environment.
+``
+To install the plugins, simple issue this command: 
+``
+vagrant plugin install vagrant-proxyconf*
+``
+**vagrant-proxyconf** is needed to enable proxy during vm build under vagrant environment.
 
 Note, in some cases, you might need to install the following plugins as
 well. But on for this exercise, you won’t need it.
@@ -74,36 +65,23 @@ vagrant-vbguest
 2\. Install virtualbox:
 
 ** **wget
-<http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo>
-
-<span id="anchor"></span><span id="anchor-1"></span><span
-id="anchor"></span>
-
+http://download.virtualbox.org/virtualbox/rpm/rhel/virtualbox.repo
  yum --enablerepo=epel install dkms
-
  yum groupinstall "Development Tools"
-
-<span id="anchor-2"></span> yum install kernel-devel
-
  yum install VirtualBox
 
-For Windows:
+## For Windows:
 
 1.  Enable Proxy:
-
 ** ** Open your command line and issue this command.
+* set http_proxy=http://username:*[*password@proxyserver*](mailto:password@proxyserver)*:port*
 
- * set
-http\_proxy=http://username:*[*password@proxyserver*](mailto:password@proxyserver)*:port*
-
-* set
-https\_proxy=http://username:*[*password@proxyserver*](mailto:password@proxyserver)*:port*
+* set https_proxy=http://username:*[*password@proxyserver*](mailto:password@proxyserver)*:port*
 
 To verify the proxy settings:
 
- * echo %https\_proxy%*
-
-* echo %http\_proxy%*
+  * echo %https\_proxy%*
+  * echo %http\_proxy%*
 
 1.  Download and install vagrant from this link:
     <https://www.vagrantup.com/downloads.html>
