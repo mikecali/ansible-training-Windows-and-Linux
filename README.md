@@ -21,21 +21,18 @@
 - Internet access is a must!
 - VT support is enabled on your pc/laptop bios!
 - Install Notepad++ - <https://notepad-plus-plus.org/download/v7.3.3.html>
+- Vagrant - <https://www.vagrantup.com/downloads.html>
+- Virtualbox - <https://www.virtualbox.org/wiki/Downloads>
 
- Vagrant - <https://www.vagrantup.com/downloads.html>
+## For **Windows **desktop, you need an additional package to be installed.
 
-2\. Virtualbox - <https://www.virtualbox.org/wiki/Downloads>
-
-For **Windows **desktop, you need an additional package to be installed.
 This is to enable the ssh client on your desktop.
-
-1\. git – <http://git.scm.com/downloads>
-
+- git – <http://git.scm.com/downloads>
 **Note**: If you have hyperv installed on you laptop, this will cause
 virtualbox to show 32bit OS support only and will make the vagrant vm
 build failed.
 
-In short:
+## In short:
 
 1\. Your Host OS is 64-bits
 
