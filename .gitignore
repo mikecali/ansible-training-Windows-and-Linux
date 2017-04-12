@@ -1,0 +1,4 @@
+*.retry
+*.work
+.vagrant
+*.git
