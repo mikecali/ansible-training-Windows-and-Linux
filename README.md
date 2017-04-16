@@ -1,4 +1,4 @@
-# Vagrant Setup for Session-1
+# Vagrant Setup
 
 ## Why Vagrant?
 
